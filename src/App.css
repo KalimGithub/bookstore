@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:ital@1&family=Roboto&display=swap');
+
+
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+/* font-family: 'Mulish', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+background-color: black;
 }
 
 .App-logo {
@@ -35,4 +42,123 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292828;
+  color: white;
+}
+
+#book-text{
+  color: gray;
+  font-size: 16px;
+}
+
+.left-header, .center-header, .right-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 20px;
+  gap: 1rem;
+}
+#icons{
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.center-header{
+  width: 70vw;
+  justify-content: center;
+
+}
+.center-header input{
+  padding:0px 20px;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.input-div{
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgba(55, 55, 55, 1);
+  border: none;
+  padding: 5px 10px;
+  width: 50%;
+}
+::placeholder{
+  color: rgba(128, 128, 128, 1);
+}
+
+#search-btn{
+  background-color: #292828;
+  color: rgba(128, 128, 128, 1);
+  padding: 5px 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#search-btn:hover{
+  box-shadow: 4px 1px 32px 5px rgba(147,147,147,1) inset;
+  -webkit-box-shadow: 4px 1px 32px 5px rgba(147,147,147,1) inset;
+  -moz-box-shadow: 4px 1px 32px 5px rgba(147,147,147,1) inset;
+  color: white;
+  transform: scale(1.01);
+  transition: all 0.1s ease-out;
+}
+#icons:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-out;
+}
+
+.home{
+  background-color: black;
+  color: white;
+}
+.book-div img{
+  height: 80%;
+  width: fit-content;
+  margin: 40px 40px;
+  transform: rotate(-10deg);
+}
+
+.book-div{
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  height: 50vh;
+  width: 60%;
+ 
+}  
+.book-hero-section{
+  display: flex;
+  /* width: 100%; */
+  gap: 5rem;
+  margin: 100px 30px;
+  overflow: scroll;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+.title-div{
+  width: 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  text-wrap: wrap;
+  background-color: green;
+}
+#book-description{
+  /* font-size: 12px; */
+  text-wrap: wrap;
+}
+#book-title{
+  font-size: medium;
 }
